@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+input {
+    display: none;
+}
+
+.botao {
+    display: block;
+    padding: 10px;
+    margin: 5px auto;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    width: 150px;
+    text-align: center;
+}
+
+.botao:hover {
+    background-color: #0056b3;
+}
+
+.mensagem {
+    display: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#msg1:checked ~ .mensagem1 {
+    display: block;
+}
+
+#msg2:checked ~ .mensagem2 {
+    display: block;
+}
+
+#msg3:checked ~ .mensagem3 {
+    display: block;
+}
+
+#msg4:checked ~ .mensagem4 {
+    display: block;
+}
+
+#msg5:checked ~ .mensagem5 {
+    display: block;
+}
+
+#msg5:checked ~ .botao {
+    background-color: gray;
+    cursor: not-allowed;
+}
